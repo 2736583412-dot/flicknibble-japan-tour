@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlickNibble House - 光影味蕾之旅 | Taste the Movies. Feel the Moment.</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 语言切换器 -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active" data-en="English" data-zh="English" data-ja="English">English</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn" data-en="中文" data-zh="中文" data-ja="中文">中文</button>
+        <button onclick="switchLanguage('ja')" class="lang-btn" data-en="日本語" data-zh="日本語" data-ja="日本語">日本語</button>
+    </div>
+
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo-flicknibble.png" alt="FlickNibble House Logo">
+                <span class="logo-text" data-en="FlickNibble House" data-zh="FlickNibble House" data-ja="FlickNibble House">FlickNibble House</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active" data-en="Home" data-zh="首页" data-ja="ホーム">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/about/company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                            <li><a href="pages/about/leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                            <li><a href="pages/about/gallery.html" data-en="Gallery" data-zh="公司画廊" data-ja="ギャラリー">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Products & Services" data-zh="产品服务" data-ja="製品・サービス">Products & Services ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/tourism/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                            <li><a href="pages/entertainment/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                            <li><a href="pages/sports/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/why-us/value-proposition.html" data-en="Value Proposition" data-zh="价值主张" data-ja="価値提案">Value Proposition</a></li>
+                            <li><a href="pages/why-us/sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                            <li><a href="pages/why-us/partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Contact" data-zh="联系我们" data-ja="お問い合わせ">Contact ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/contact/contact-info.html" data-en="Contact Info" data-zh="联系信息" data-ja="連絡先">Contact Info</a></li>
+                            <li><a href="pages/contact/inquiry.html" data-en="Inquiry Form" data-zh="咨询表单" data-ja="お問い合わせフォーム">Inquiry Form</a></li>
+                            <li><a href="pages/contact/social-media.html" data-en="Social Media" data-zh="社交媒体" data-ja="SNS">Social Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-en="10-Day Japan Romance Tour" data-zh="10天日本浪漫之旅" data-ja="10日間の日本ロマンチックツアー">10-Day Japan Romance Tour</h1>
+            <p data-en="Experience Cinema & Dining in Japan's Most Romantic Cities" data-zh="在日本最浪漫的城市体验电影与美食" data-ja="日本で最もロマンチックな都市で映画とダイニングを体験">Experience Cinema & Dining in Japan's Most Romantic Cities</p>
+            <a href="pages/tourism/japan-tours.html" class="cta-button" data-en="Explore Packages" data-zh="探索套餐" data-ja="パッケージを探索">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- 特色服务 -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Why Choose FlickNibble" data-zh="为什么选择FlickNibble" data-ja="FlickNibbleを選ぶ理由">Why Choose FlickNibble</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3 data-en="Cinema-Dining Fusion" data-zh="影食融合" data-ja="映画と料理の融合">Cinema-Dining Fusion</h3>
+                    <p data-en="Break the boundaries between movie watching and dining with seat-side fresh food delivery" data-zh="打破观影与用餐界限，提供座位旁新鲜美食配送" data-ja="鑑賞と食事の境界を打破し、席側での新鮮なフードデリバリーを提供">Break the boundaries between movie watching and dining with seat-side fresh food delivery</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗾</div>
+                    <h3 data-en="Japan's Top Cities" data-zh="日本顶级城市" data-ja="日本のトップ都市">Japan's Top Cities</h3>
+                    <p data-en="5 cities in 10 days: Hokkaido, Tokyo, Kyoto, Nara, Okinawa" data-zh="10天5城：北海道、东京、京都、奈良、冲绳" data-ja="10日間で5都市：北海道、東京、京都、奈良、沖縄">5 cities in 10 days: Hokkaido, Tokyo, Kyoto, Nara, Okinawa</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍱</div>
+                    <h3 data-en="Scenario-Based Catering" data-zh="场景化餐饮" data-ja="シナリオベースの料理">Scenario-Based Catering</h3>
+                    <p data-en="Personalized movie-meal experiences with themed menus for each destination" data-zh="为每个目的地提供主题菜单的个性化影食体验" data-ja="各目的地のテーマメニューによるパーソナライズされた映画×食事体験">Personalized movie-meal experiences with themed menus for each destination</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💑</div>
+                    <h3 data-en="Couple-Focused" data-zh="情侣专属" data-ja="カップル専用">Couple-Focused</h3>
+                    <p data-en="Every detail designed for Chinese couples aged 18-35 seeking romantic experiences" data-zh="每个细节都为中国18-35岁寻求浪漫体验的情侣设计" data-ja="中国の18〜35歳のロマンチックな体験を求めるカップルのために細部まで設計">Every detail designed for Chinese couples aged 18-35 seeking romantic experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 日本旅游套餐预览 -->
+    <section class="japan-tours-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Featured Japan Tour Package" data-zh="精选日本旅游套餐" data-ja="厳選日本ツアーパッケージ">Featured Japan Tour Package</h2>
+            </div>
+            <div class="tour-card">
+                <div class="tour-header">
+                    <h3 data-en="10-Day 5-City Summer Romance Tour" data-zh="10天5城夏日浪漫之旅" data-ja="10日間5都市サマーロマンスツアー">10-Day 5-City Summer Romance Tour</h3>
+                    <p data-en="Limited Edition | Couples Only | Cinema + Dining Experience" data-zh="限量版 | 情侣专属 | 影院+美食体验" data-ja="限定版 | カップル専用 | 映画館+美食体験">Limited Edition | Couples Only | Cinema + Dining Experience</p>
+                </div>
+                <div class="tour-content">
+                    <div class="tour-itinerary">
+                        <div class="day-item">
+                            <h4 data-en="Days 1-2" data-zh="第1-2天" data-ja="1-2日目">Days 1-2</h4>
+                            <p data-en="Tokyo: Glasley Hotel, Disneyland VIP" data-zh="东京：格拉斯利酒店，迪士尼VIP" data-ja="東京：グラスレホテル、ディズニーVIP">Tokyo: Glasley Hotel, Disneyland VIP</p>
+                        </div>
+                        <div class="day-item">
+                            <h4 data-en="Days 3-5" data-zh="第3-5天" data-ja="3-5日目">Days 3-5</h4>
+                            <p data-en="Kyoto: Kiyomizu-dera, Kimono Experience" data-zh="京都：清水寺，和服体验" data-ja="京都：清水寺、着物体験">Kyoto: Kiyomizu-dera, Kimono Experience</p>
+                        </div>
+                        <div class="day-item">
+                            <h4 data-en="Day 6" data-zh="第6天" data-ja="6日目">Day 6</h4>
+                            <p data-en="Nara: Todaiji Temple, Deer Park" data-zh="奈良：东大寺，奈良公园" data-ja="奈良：東大寺、鹿公園">Nara: Todaiji Temple, Deer Park</p>
+                        </div>
+                        <div class="day-item">
+                            <h4 data-en="Days 7-8" data-zh="第7-8天" data-ja="7-8日目">Days 7-8</h4>
+                            <p data-en="Osaka: Castle, Dotonbori Dining" data-zh="大阪：大阪城，道顿堀美食" data-ja="大阪：大阪城、道頓堀グルメ">Osaka: Castle, Dotonbori Dining</p>
+                        </div>
+                        <div class="day-item">
+                            <h4 data-en="Days 9-10" data-zh="第9-10天" data-ja="9-10日目">Days 9-10</h4>
+                            <p data-en="Okinawa: Beach, Water Sports" data-zh="冲绳：海滩，水上运动" data-ja="沖縄：ビーチ、マリンスポーツ">Okinawa: Beach, Water Sports</p>
+                        </div>
+                    </div>
+                    <div class="text-center" style="margin-top: var(--spacing-lg);">
+                        <div class="tour-price" data-en="¥25,000<span>/person</span>" data-zh="¥25,000<span>/人</span>" data-ja="¥25,000<span>/人</span>">¥25,000<span>/person</span></div>
+                        <p style="color: var(--text-light); margin: var(--spacing-xs) 0;" data-en="All-inclusive: 9 nights accommodation, meals, activities, insurance" data-zh="全包：9晚住宿、餐饮、活动、保险" data-ja="すべて込み：9泊宿泊、食事、アクティビティ、保険">All-inclusive: 9 nights accommodation, meals, activities, insurance</p>
+                        <a href="pages/tourism/japan-tours.html" class="cta-button" style="margin-top: var(--spacing-sm);" data-en="View Full Itinerary" data-zh="查看完整行程" data-ja="完全な旅程を見る">View Full Itinerary</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 画廊预览 -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Experience Gallery" data-zh="体验画廊" data-ja="体験ギャラリー">Experience Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-tokyo-disney.jpg" alt="Tokyo Disneyland">
+                    <div class="gallery-overlay">
+                        <span data-en="Tokyo Disneyland VIP" data-zh="东京迪士尼VIP" data-ja="東京ディズニーVIP">Tokyo Disneyland VIP</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-kyoto-kimono.jpg" alt="Kyoto Kimono">
+                    <div class="gallery-overlay">
+                        <span data-en="Kyoto Kimono Experience" data-zh="京都和服体验" data-ja="京都着物体験">Kyoto Kimono Experience</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-okinawa-beach.jpg" alt="Okinawa Beach">
+                    <div class="gallery-overlay">
+                        <span data-en="Okinawa Water Sports" data-zh="冲绳水上运动" data-ja="沖縄マリンスポーツ">Okinawa Water Sports</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-cinema-dining.jpg" alt="Cinema Dining">
+                    <div class="gallery-overlay">
+                        <span data-en="In-Seat Dining" data-zh="座位旁用餐" data-ja="席側での食事">In-Seat Dining</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="pages/about/gallery.html" class="cta-button secondary" data-en="View Full Gallery" data-zh="查看完整画廊" data-ja="全ギャラリーを見る">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-en="Ready for Your Japan Adventure?" data-zh="准备好您的日本之旅了吗？" data-ja="日本の冒険の準備はできましたか？">Ready for Your Japan Adventure?</h2>
+            <p data-en="Book now and enjoy early-bird discounts for couples" data-zh="立即预订，享受情侣早鸟优惠" data-ja="今すぐ予約してカップル早期割引を享受">Book now and enjoy early-bird discounts for couples</p>
+            <div class="cta-buttons">
+                <a href="pages/contact/inquiry.html" class="cta-button" data-en="Get Custom Quote" data-zh="获取定制报价" data-ja="カスタム見積もりを取得">Get Custom Quote</a>
+                <a href="pages/contact/contact-info.html" class="cta-button secondary" data-en="Contact Us" data-zh="联系我们" data-ja="お問い合わせ">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-zh="快速链接" data-ja="クイックリンク">Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/tourism/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                        <li><a href="pages/entertainment/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                        <li><a href="pages/sports/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        <li><a href="pages/why-us/value-proposition.html" data-en="Value Proposition" data-zh="价值主张" data-ja="価値提案">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="About" data-zh="关于" data-ja="について">About</h4>
+                    <ul>
+                        <li><a href="pages/about/company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                        <li><a href="pages/about/leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                        <li><a href="pages/about/gallery.html" data-en="Gallery" data-zh="公司画廊" data-ja="ギャラリー">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-zh="联系方式" data-ja="お問い合わせ">Contact</h4>
+                    <p data-en="Email: info@flicknibble.com" data-zh="邮箱：info@flicknibble.com" data-ja="メール：info@flicknibble.com">Email: info@flicknibble.com</p>
+                    <p data-en="Phone: +86-400-123-4567" data-zh="电话：+86-400-123-4567" data-ja="電話：+86-400-123-4567">Phone: +86-400-123-4567</p>
+                    <p data-en="Shanghai, China" data-zh="中国上海" data-ja="中国・上海">Shanghai, China</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-zh="关注我们" data-ja="フォローする">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="WeChat">💬</a>
+                        <a href="#" aria-label="Weibo">📱</a>
+                        <a href="#" aria-label="Douyin">🎵</a>
+                        <a href="#" aria-label="Xiaohongshu">📖</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlickNibble House. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

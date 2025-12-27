@@ -1,0 +1,487 @@
+/* ==========================================
+   FlickNibble House - Warm Cinema Palette
+   ========================================== */
+:root {
+    /* 暖色调主色板 - 电影与美食融合 */
+    --primary-warm: #FF6B35;    /* 暖橙色 - 活力与食欲 */
+    --secondary-warm: #F7931E;   /* 暖黄色 - 温馨灯光 */
+    --accent-rose: #FF9A8B;      /* 暖粉色 - 浪漫氛围 */
+    --accent-gold: #D4AF37;      /* 金色 - 高端品质 */
+    
+    /* 中性色 */
+    --bg-cream: #FFF8E7;         /* 奶油白 - 舒适背景 */
+    --text-brown: #3E2723;       /* 深棕色 - 主文本 */
+    --text-light: #6D4C41;       /* 浅棕色 - 副文本 */
+    --border-warm: #FFE0B2;      /* 暖边框 */
+    
+    /* 功能色 */
+    --success: #4CAF50;
+    --warning: #FF9800;
+    --error: #F44336;
+    
+    /* 字体 */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-japanese: 'Noto Sans JP', sans-serif;
+    --font-chinese: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    
+    /* 间距 */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* 圆角 */
+    --border-radius: 12px;
+    --border-radius-lg: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: linear-gradient(135deg, #FFF8E7 0%, #FFECB3 100%);
+    color: var(--text-brown);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+body[lang="zh"] {
+    font-family: var(--font-chinese);
+}
+
+body[lang="ja"] {
+    font-family: var(--font-japanese);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* 语言切换器 */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--bg-cream);
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: var(--text-light);
+}
+
+.lang-btn.active {
+    background: var(--primary-warm);
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+/* 头部导航 */
+.header {
+    background: rgba(255, 248, 231, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(247, 147, 30, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-warm);
+    letter-spacing: -0.5px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-lg);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-brown);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--primary-warm);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--secondary-warm);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+/* 下拉菜单 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-cream);
+    min-width: 220px;
+    box-shadow: 0 8px 25px rgba(247, 147, 30, 0.15);
+    border-radius: var(--border-radius);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    padding: var(--spacing-sm) 0;
+    border: 1px solid var(--border-warm);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--primary-warm);
+}
+
+/* 英雄区域 */
+.hero {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-warm) 0%, var(--secondary-warm) 100%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 0 var(--spacing-md);
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 800;
+    line-height: 1.1;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* 按钮样式 */
+.cta-button {
+    display: inline-block;
+    padding: 14px 36px;
+    background: var(--accent-gold);
+    color: var(--text-brown);
+    text-decoration: none;
+    border-radius: var(--border-radius-lg);
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-gold);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: var(--accent-gold);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+    margin-left: var(--spacing-sm);
+}
+
+.cta-button.secondary:hover {
+    background: white;
+    color: var(--primary-warm);
+}
+
+/* 特色区域 */
+.features {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-cream);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.feature-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(247, 147, 30, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-warm);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(247, 147, 30, 0.15);
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-card h3 {
+    color: var(--primary-warm);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.3rem;
+}
+
+/* 日本旅游套餐预览 */
+.japan-tours-preview {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(to bottom, var(--bg-cream), #FFE0B2);
+}
+
+.tour-card {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-lg);
+}
+
+.tour-card:hover {
+    transform: scale(1.02);
+}
+
+.tour-header {
+    background: linear-gradient(135deg, var(--primary-warm), var(--accent-rose));
+    color: white;
+    padding: var(--spacing-md);
+}
+
+.tour-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.tour-content {
+    padding: var(--spacing-lg);
+}
+
+.tour-itinerary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.day-item {
+    background: var(--bg-cream);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border-left: 4px solid var(--secondary-warm);
+}
+
+.tour-price {
+    font-size: 2rem;
+    color: var(--primary-warm);
+    font-weight: 800;
+}
+
+/* 画廊 */
+.gallery {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-cream);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-lg);
+    height: 280px;
+    background: linear-gradient(135deg, var(--accent-rose), var(--secondary-warm));
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    padding: var(--spacing-md);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* CTA区域 */
+.cta-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--primary-warm), var(--accent-rose));
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+/* 页脚 */
+.footer {
+    background: var(--text-brown);
+    color: var(--bg-cream);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-section h4 {
+    color: var(--accent-gold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: #D7CCC8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--accent-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 248, 231, 0.1);
+    font-size: 0.9rem;
+    color: #BCAAA4;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info - FlickNibble House</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active">English</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn">中文</button>
+        <button onclick="switchLanguage('ja')" class="lang-btn">日本語</button>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../../assets/images/logo-flicknibble.png" alt="FlickNibble House Logo">
+                <span class="logo-text" data-en="FlickNibble House" data-zh="FlickNibble House" data-ja="FlickNibble House">FlickNibble House</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../../index.html" data-en="Home" data-zh="首页" data-ja="ホーム">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                            <li><a href="../about/leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Products & Services" data-zh="产品服务" data-ja="製品・サービス">Products & Services ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../tourism/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                            <li><a href="../entertainment/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                            <li><a href="../sports/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../why-us/value-proposition.html" data-en="Value Proposition" data-zh="价值主张" data-ja="価値提案">Value Proposition</a></li>
+                            <li><a href="../why-us/sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                            <li><a href="../why-us/partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="active" data-en="Contact" data-zh="联系我们" data-ja="お問い合わせ">Contact ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact-info.html" class="active" data-en="Contact Info" data-zh="联系信息" data-ja="連絡先">Contact Info</a></li>
+                            <li><a href="inquiry.html" data-en="Inquiry Form" data-zh="咨询表单" data-ja="お問い合わせフォーム">Inquiry Form</a></li>
+                            <li><a href="social-media.html" data-en="Social Media" data-zh="社交媒体" data-ja="SNS">Social Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+        </div>
+    </header>
+
+    <section class="page-banner" style="background-image: url(../../assets/images/contact-banner.jpg);">
+        <div class="banner-content">
+            <h1 data-en="Contact Us" data-zh="联系我们" data-ja="お問い合わせ">Contact Us</h1>
+            <p data-en="We'd love to hear from you" data-zh="我们很高兴收到您的来信" data-ja="お問い合わせをお待ちしています">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="contact-info">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 data-en="Headquarters" data-zh="总部" data-ja="本社">Headquarters</h3>
+                        <p data-en="FlickNibble House<br>123 Movie Street<br>Shanghai, China 200000" data-zh="FlickNibble House<br>电影街123号<br>中国上海 200000" data-ja="FlickNibble House<br>映画街123番<br>中国上海 200000">FlickNibble House<br>123 Movie Street<br>Shanghai, China 200000</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3 data-en="Phone" data-zh="电话" data-ja="電話">Phone</h3>
+                        <p data-en="Customer Service: +86-400-123-4567<br>Business Hours: 9:00-21:00 (Shanghai Time)" data-zh="客户服务：+86-400-123-4567<br>营业时间：9:00-21:00（上海时间）" data-ja="カスタマーサービス：+86-400-123-4567<br>営業時間：9:00-21:00（上海時間）">Customer Service: +86-400-123-4567<br>Business Hours: 9:00-21:00 (Shanghai Time)</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3 data-en="Email" data-zh="邮箱" data-ja="メール">Email</h3>
+                        <p data-en="General: info@flicknibble.com<br>Bookings: bookings@flicknibble.com<br>Support: support@flicknibble.com" data-zh="一般咨询：info@flicknibble.com<br>预订：bookings@flicknibble.com<br>支持：support@flicknibble.com" data-ja="一般：info@flicknibble.com<br>予約：bookings@flicknibble.com<br>サポート：support@flicknibble.com">General: info@flicknibble.com<br>Bookings: bookings@flicknibble.com<br>Support: support@flicknibble.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <h3 data-en="Business Hours" data-zh="营业时间" data-ja="営業時間">Business Hours</h3>
+                        <p data-en="Monday - Friday: 9:00 AM - 9:00 PM<br>Saturday - Sunday: 10:00 AM - 8:00 PM<br>Holidays: 10:00 AM - 6:00 PM" data-zh="周一至周五：9:00-21:00<br>周六至周日：10:00-20:00<br>节假日：10:00-18:00" data-ja="月曜日〜金曜日：9:00-21:00<br>土曜日〜日曜日：10:00-20:00<br>祝日：10:00-18:00">Monday - Friday: 9:00 AM - 9:00 PM<br>Saturday - Sunday: 10:00 AM - 8:00 PM<br>Holidays: 10:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map-section">
+                <h2 data-en="Find Us on Map" data-zh="在地图上找到我们" data-ja="地図で私たちを見つける">Find Us on Map</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.236730357934!2d121.47366731520466!3d31.230372481457835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDEzJzQ5LjMiTiAxMjHCsDI4JzMxLjUiRQ!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2 data-en="Have Questions?" data-zh="有问题吗？" data-ja="質問がありますか？">Have Questions?</h2>
+                <p data-en="Our team is ready to help you plan your perfect Japan tour" data-zh="我们的团队随时准备帮助您规划完美的日本之旅" data-ja="私たちのチームがあなたの完璧な日本ツアーの計画をお手伝いします">Our team is ready to help you plan your perfect Japan tour</p>
+                <div class="cta-buttons">
+                    <a href="inquiry.html" class="cta-button" data-en="Send Inquiry" data-zh="发送咨询" data-ja="問い合わせを送信">Send Inquiry</a>
+                    <a href="social-media.html" class="cta-button secondary" data-en="Follow on Social Media" data-zh="关注社交媒体" data-ja="ソーシャルメディアでフォロー">Follow on Social Media</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-zh="快速链接" data-ja="クイックリンク">Quick Links</h4>
+                    <ul>
+                        <li><a href="../tourism/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                        <li><a href="../entertainment/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                        <li><a href="../sports/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Company" data-zh="公司" data-ja="会社">Company</h4>
+                    <ul>
+                        <li><a href="../about/company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                        <li><a href="../about/leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-zh="联系方式" data-ja="お問い合わせ">Contact</h4>
+                    <p data-en="Email: info@flicknibble.com" data-zh="邮箱：info@flicknibble.com" data-ja="メール：info@flicknibble.com">Email: info@flicknibble.com</p>
+                    <p data-en="Phone: +86-400-123-4567" data-zh="电话：+86-400-123-4567" data-ja="電話：+86-400-123-4567">Phone: +86-400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlickNibble House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+</body>
+</html>

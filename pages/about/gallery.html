@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - FlickNibble House</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/responsive.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active">English</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn">中文</button>
+        <button onclick="switchLanguage('ja')" class="lang-btn">日本語</button>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../../assets/images/logo-flicknibble.png" alt="FlickNibble House Logo">
+                <span class="logo-text" data-en="FlickNibble House" data-zh="FlickNibble House" data-ja="FlickNibble House">FlickNibble House</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../../index.html" data-en="Home" data-zh="首页" data-ja="ホーム">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                            <li><a href="leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                            <li><a href="gallery.html" class="active" data-en="Gallery" data-zh="公司画廊" data-ja="ギャラリー">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Products & Services" data-zh="产品服务" data-ja="製品・サービス">Products & Services ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../tourism/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                            <li><a href="../entertainment/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                            <li><a href="../sports/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../why-us/value-proposition.html" data-en="Value Proposition" data-zh="价值主张" data-ja="価値提案">Value Proposition</a></li>
+                            <li><a href="../why-us/sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                            <li><a href="../why-us/partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Contact" data-zh="联系我们" data-ja="お問い合わせ">Contact ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contact/contact-info.html" data-en="Contact Info" data-zh="联系信息" data-ja="連絡先">Contact Info</a></li>
+                            <li><a href="../contact/inquiry.html" data-en="Inquiry Form" data-zh="咨询表单" data-ja="お問い合わせフォーム">Inquiry Form</a></li>
+                            <li><a href="../contact/social-media.html" data-en="Social Media" data-zh="社交媒体" data-ja="SNS">Social Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+        </div>
+    </header>
+
+    <section class="page-banner" style="background-image: url(../../assets/images/gallery-banner.jpg);">
+        <div class="banner-content">
+            <h1 data-en="Experience Gallery" data-zh="体验画廊" data-ja="体験ギャラリー">Experience Gallery</h1>
+            <p data-en="Moments from our Japan tours and cinema dining" data-zh="我们的日本之旅和影院餐饮的精彩瞬间" data-ja="私たちの日本ツアーと映画館飲食の瞬間">Moments from our Japan tours and cinema dining</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="gallery">
+                <div class="section-title">
+                    <h2 data-en="Japan Tour Experiences" data-zh="日本旅游体验" data-ja="日本ツアー体験">Japan Tour Experiences</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-tokyo-disney.jpg" alt="Tokyo Disneyland">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Tokyo Disneyland VIP" data-zh="东京迪士尼VIP" data-ja="東京ディズニーVIP">Tokyo Disneyland VIP</h4>
+                            <p data-en="Couples enjoying exclusive access and themed dining" data-zh="情侣享受专属通道和主题餐饮" data-ja="カップルが専用アクセスとテーマ別食事を楽しむ">Couples enjoying exclusive access and themed dining</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-kyoto-kimono.jpg" alt="Kyoto Kimono">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Kyoto Kimono Experience" data-zh="京都和服体验" data-ja="京都着物体験">Kyoto Kimono Experience</h4>
+                            <p data-en="Professional photography at Kiyomizu-dera Temple" data-zh="在清水寺的专业摄影" data-ja="清水寺でのプロカメラマン撮影">Professional photography at Kiyomizu-dera Temple</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-nara-deer.jpg" alt="Nara Deer Park">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Nara Deer Park" data-zh="奈良鹿公园" data-ja="奈良鹿公園">Nara Deer Park</h4>
+                            <p data-en="Peaceful moments with sacred deer at Todaiji Temple" data-zh="在东大寺与神鹿的宁静时刻" data-ja="東大寺での神聖な鹿との平和な時">Peaceful moments with sacred deer at Todaiji Temple</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-osaka-castle.jpg" alt="Osaka Castle">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Osaka Castle" data-zh="大阪城" data-ja="大阪城">Osaka Castle</h4>
+                            <p data-en="Historical exploration and Dotonbori dining experience" data-zh="历史探索和道顿堀餐饮体验" data-ja="歴史探索と道頓堀飲食体験">Historical exploration and Dotonbori dining experience</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-okinawa-beach.jpg" alt="Okinawa Beach">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Okinawa Beach Paradise" data-zh="冲绳海滩天堂" data-ja="沖縄ビーチパラダイス">Okinawa Beach Paradise</h4>
+                            <p data-en="Water sports and romantic beach cinema dining" data-zh="水上运动和浪漫海滩影院餐饮" data-ja="マリンスポーツとロマンチックなビーチシネマダイニング">Water sports and romantic beach cinema dining</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-shinkansen.jpg" alt="Bullet Train">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Japan Bullet Train" data-zh="日本新干线" data-ja="日本の新幹線">Japan Bullet Train</h4>
+                            <p data-en="Fast and comfortable travel between cities" data-zh="城市间快速舒适的旅行" data-ja="都市間の快適な高速移動">Fast and comfortable travel between cities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-title" style="margin-top: var(--spacing-xl);">
+                    <h2 data-en="Cinema Dining Experiences" data-zh="影院餐饮体验" data-ja="映画館飲食体験">Cinema Dining Experiences</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-cinema-dining.jpg" alt="In-Seat Dining">
+                        <div class="gallery-overlay">
+                            <h4 data-en="In-Seat Dining Service" data-zh="座位旁餐饮服务" data-ja="席側での食事サービス">In-Seat Dining Service</h4>
+                            <p data-en="Fresh food delivered directly to your cinema seat" data-zh="新鲜美食直接配送到您的影院座位" data-ja="新鮮な美食を映画館の席に直接配達">Fresh food delivered directly to your cinema seat</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-themed-meals.jpg" alt="Themed Meals">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Movie-Themed Meals" data-zh="电影主题餐饮" data-ja="映画テーマの食事">Movie-Themed Meals</h4>
+                            <p data-en="Customized menus inspired by the film you're watching" data-zh="根据您观看的电影灵感定制的菜单" data-ja="観ている映画にインスパイアされたカスタマイズメニュー">Customized menus inspired by the film you're watching</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-couple-experience.jpg" alt="Couple Experience">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Couple's Special Experience" data-zh="情侣特别体验" data-ja="カップル特別体験">Couple's Special Experience</h4>
+                            <p data-en="Romantic settings perfect for date nights" data-zh="完美约会之夜的浪漫场景" data-ja="デートナイトに最適なロマンチックな設定">Romantic settings perfect for date nights</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../../assets/images/gallery-luxury-cinema.jpg" alt="Luxury Cinema">
+                        <div class="gallery-overlay">
+                            <h4 data-en="Luxury Cinema Environment" data-zh="豪华影院环境" data-ja="ラグジュアリー映画館環境">Luxury Cinema Environment</h4>
+                            <p data-en="Premium seating with optimal viewing and dining comfort" data-zh="最佳观影和用餐舒适度的优质座椅" data-ja="最適な鑑賞と食事の快適性を備えたプレミアム座席">Premium seating with optimal viewing and dining comfort</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-zh="快速链接" data-ja="クイックリンク">Quick Links</h4>
+                    <ul>
+                        <li><a href="../tourism/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                        <li><a href="../entertainment/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                        <li><a href="../sports/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Company" data-zh="公司" data-ja="会社">Company</h4>
+                    <ul>
+                        <li><a href="company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                        <li><a href="leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-zh="联系方式" data-ja="お問い合わせ">Contact</h4>
+                    <p data-en="Email: info@flicknibble.com" data-zh="邮箱：info@flicknibble.com" data-ja="メール：info@flicknibble.com">Email: info@flicknibble.com</p>
+                    <p data-en="Phone: +86-400-123-4567" data-zh="电话：+86-400-123-4567" data-ja="電話：+86-400-123-4567">Phone: +86-400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlickNibble House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+</body>
+</html>
